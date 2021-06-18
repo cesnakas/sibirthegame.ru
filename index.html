@@ -9,7 +9,8 @@
 
     <link rel="shortcut icon" href="favicon/favicon.ico" />
 
-    <link rel="stylesheet" href="/dist/css/style.bundle.css" />
+    <!--<link rel="stylesheet" href="/dist/css/style.bundle.css" />-->
+    <link rel="stylesheet" href="/dist/css/app.css">
 
 </head>
 <body>
@@ -46,16 +47,35 @@
 
     <main class="content">
 
-        <section class="banner">
+        <section class="banner" itemscope itemtype="http://schema.org/Product">
             <div class="wrap banner-wrap">
-                 <div class="banner-left">
-                    <img src="/dist/img/logo.png" class="banner-left__logo" alt="img">
+                <div class="banner-left">
                     <div class="banner-preOrder">
-                        <img src="/dist/img/game_box.png" class="banner-preOrder__img" alt="img">
-                        <a class="black-btn">Купить</a>
+                        <div class="banner-preorder__left">
+                            <img itemprop="image" src="/dist/img/box-img.png" class="banner-preOrder__img" alt="Коробка с игрой">
+                        </div>
+                        <div class="banner-preOrder__right" itemprop="offers">
+                            <meta itemprop="name" content="Настольная игра «Сибирь. Начало»">
+                            <meta itemprop="description" content="Настольная игра «Сибирь. Начало» – игра для 2-4 игроков, которым интересно оказаться в роли покорителя Сибири XVIII века. Осваивайте со своим отрядом новые территории, находите сокровища, возводите церкви и остроги, основывайте поселения и сражайтесь с врагами! Станьте настоящим правителем земли сибирской!">
+                            <meta itemprop="priceCurrency" content="RUB">
+
+                            <p class="banner-preOrder__title">Цена:</p>
+                            <p class="banner-preOrder__price"><span class="banner-preOrder__price--number" itemprop="price">1899</span> рублей</p>
+                            <p class="banner-preOrder__footnote">
+                                Доставка Почтой России по РФ, курьером по Москве,
+                                <br>
+                                самовывоз м. Дмитровская ("Хлебозавод").
+                            </p>
+                            <div class="banner-preOrder__img--mobile"></div>
+                            <!--<p v-if="banner.description" v-html="banner.description" class="banner-preOrder__descr"></p>
+                            <div v-if="banner" v-html="banner.description" class="banner-preOrder__descr&#45;&#45;mobile">
+                            </div>-->
+                            <a @click="click_buy" class="black-btn banner-preOrder__btn">Купить</a>
+                        </div>
                     </div>
                 </div>
-                <img src="/dist/img/cover.png" class="banner-cover" alt="img">
+                <img src="/dist/img/cover.png" class="banner-cover" alt="Персонажи">
+                <div class="banner-cover--mobile" style="background-image: url(/dist/img/cover-mobile.jpg);"></div>
             </div>
         </section>
 
@@ -257,6 +277,7 @@
 
     <script src="/dist/libs/jquery-3.5.1/jquery-3.5.1.min.js"></script>
     <script src="/dist/js/bundle.js"></script>
+    <script src="/dist/js/app.js"></script>
 
 </body>
 </html>
