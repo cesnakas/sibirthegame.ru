@@ -366,32 +366,48 @@
             </div>
         </section>
 
-        
-
     </main>
 
-    <footer class="footer">
+    <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+        <!-- <svg-icon name="arrowToTop" class="footer-arrow" /> -->
         <div class="wrap footer-wrap">
-            <nav class="footer-nav">
+            <!--nav class="footer-nav">
                 <ul class="footer-nav__ul">
-                    <li class="footer-nav__li">
-                        <a class="footer-nav__link" href="#">Механика игры</a>
-                    </li>
-                    <li class="footer-nav__li">
-                        <a class="footer-nav__link" href="#">Что в коробке</a>
-                    </li>
-                    <li class="footer-nav__li">
-                        <a class="footer-nav__link" href="#">Словник</a>
-                    </li>
-                    <li class="footer-nav__li">
-                        <a class="footer-nav__link" href="#">Предзаказ</a>
-                    </li>
-                    <li class="footer-nav__li">
-                        <a class="footer-nav__link" href="#">Контакты</a>
+                    <li v-for="(item, index) in footer_menu" :key="index" class="footer-nav__li">
+                        <!-- <nuxt-link  :to="`${item.link}`"
+                                    class="footer-nav__link">{{ item.name }}</nuxt-link> -->
+            <!--nuxt-link  :to="{path: `${item.path}`, hash: `${item.hash}`}"
+                                    class="footer-nav__link">{{ item.name }}</nuxt-link>
                     </li>
                 </ul>
-            </nav>
-            <div></div>
+            </nav-->
+            <div class="footer-bottom">
+                <div class="footer-copyrigh">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="footer-copyrigh__img icon sprite-icons">
+                        <use href="/dist/img/icons.svg#i-logo-cvz" xlink:href="/dist/img/icons.svg#i-logo-cvz"></use>
+                    </svg>
+                    <p class="footer-copyrigh__text">Copyright ©2021 НКО Система вечных ценностей</p>
+                    <meta itemprop="copyrightYear" content="2021">
+                    <meta itemprop="copyrightHolder" content="Система вечных ценностей">
+                </div>
+                <img src="/dist/img/logo.png" alt="logo_alt" class="footer__logo">
+                <div class="footer-info">
+                    <div class="footer-info__col">
+                        <h4 class="footer-info__h4">Помощь</h4>
+                        <a @click="open_requisites_dialog" class="footer-info__link">Реквизиты</a>
+                        <a @click="open_payment_dialog" class="footer-info__link">Способы оплаты</a>
+                        <a @click="open_delivery_dialog" class="footer-info__link">Доставка</a>
+                        <a @click="open_purchaseReturns_dialog" class="footer-info__link">Правила возврата товара</a>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/sibir.the.game" target="_blank" rel="nofollow" class="footer-social__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="footer-social__img icon sprite-icons">
+                            <use href="/dist/img/icons.svg#i-facebook" xlink:href="/dist/img/icons.svg#i-facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
