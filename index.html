@@ -271,7 +271,7 @@
                         Читайте наш <b>Словник</b> и узнайте больше
                         об истории Сибири.</p>
                     <img class="vocabulary-content__characters" src="/dist/img/characters.png" alt="Персонажи">
-                    <a class="red-btn vocabulary-content__btn" href="/encyclopedia">Читать</a>
+                    <a class="red-btn vocabulary-content__btn" href="/encyclopedia.html">Читать</a>
                 </div>
             </div>
         </section>
@@ -281,46 +281,66 @@
                 <div class="preOrder--inner">
                     <div class="preOrder-left">
                         <img class="preOrder-left__img" src="/dist/img/game_box.png" alt="Коробка с игрой">
-                        <strong v-html="banner.bottom_banner_title" class="preOrder-left-content__descr mobile-only"></strong>
-                        <p v-html="banner.bottom_banner_desc" class="preOrder-left-content__descr mobile-only"> </p>
+                        <strong class="preOrder-left-content__descr mobile-only"></strong>
+                        <p class="preOrder-left-content__descr mobile-only"></p>
                         <a @click="click_buy" class="black-btn preOrder-right__btn mobile-only">Купить</a>
                     </div>
                     <div class="preOrder-right">
                         <p class="preOrder-right__text">Цена:</p>
-                        <p class="preOrder-right__price"><span class="preOrder-right__price--number">{{game_price}}</span> рубль</p>
-                        <p v-html="banner.after_price" class="preOrder-right__descr"></p>
+                        <p class="preOrder-right__price"><span class="preOrder-right__price--number">1899</span> рубль</p>
+                        <p class="preOrder-right__descr">
+                            Доставка Почтой России по РФ, курьером по Москве,
+                            <br>
+                            самовывоз м. Дмитровская ("Хлебозавод").
+                        </p>
                         <a @click="click_buy" class="red-btn preOrder-right__btn mobile-none">Купить</a>
-                        <h3 v-html="banner.bottom_banner_title" class="preOrder-left-content__title mobile-none"></h3>
-                        <p v-html="banner.bottom_banner_desc" class="preOrder-left-content__descr mobile-none"></p>
+                        <h3 class="preOrder-left-content__title mobile-none"></h3>
+                        <p class="preOrder-left-content__descr mobile-none"></p>
                         <!-- <div class="preOder-dislaimer">
                             <p>* - предзаказная цена действительна до <b>1 декабря 2020 года</b></p>
                         </div> -->
                     </div>
                 </div>
-
             </div>
             <div id="publisher" class="publisher">
                 <div class="wrap">
-                    <h2 class="h2 contacts__h2">
-                        Об издателе
-                    </h2>
+                    <h2 class="h2 contacts__h2">Об издателе</h2>
                     <div class="publisher-content">
                         <div class="publisher-item">
-                            <svg-icon name="logo_cvz" class="publisher-item--svg" />
+                            <img src="/dist/img/logo_cvz.svg" alt="система ценностей">
                         </div>
+
                         <div class="publisher-item">
                             <div class="publisher-item-info">
-                                <div v-if="desc" v-html="desc" class="infos"></div>
-
+                                <div class="infos">
+                                    <p>Создатель игры&nbsp;— автономная некоммерческая организация по&nbsp;поддержке просветительских проектов <b>«Система Ценностей»</b>. АНО основана в&nbsp;2013 году. Реализует издательские, контентные, культурные проекты.</p>
+                                    <p>Тематика всех проектов так или иначе связана с&nbsp;культурой, в&nbsp;которой мы&nbsp;живем. К&nbsp;сожалению, тема многонациональной истории России и&nbsp;СССР сейчас сильно политизирована, узурпирована пропагандой. Мир разделился на&nbsp;квасных патриотов и&nbsp;безродных космополитов. Мы&nbsp;против такого деления и&nbsp;своими проектами стараемся показать, что серединный путь возможен.</p>
+                                    <p>Мы&nbsp;не&nbsp;«грантоеды», не&nbsp;пильщики госбюджета и&nbsp;не&nbsp;иностранные агенты. Да, такое тоже бывает!</p>
+                                    <p>Если вам интересно нас поддержать, подпишитесь на&nbsp;<a class="red-link" href="https://www.facebook.com/sistema.cennostey/" target="_blank">рассылку</a>, делитесь нашими новостями, <a class="red-link" href="http://sistemacennostey.ru/supporters/help/" target="_blank">донаты</a> тоже приветствуются!</p>
+                                </div>
                                 <div class="publisher-item-info__links">
-                                    <div v-for="(item,index) in link_list" :key="index">
-                                        <a :href="item.link" rel="nofollow" target="_blank">
-                                            <svg-icon name="link-icons" class="publisher-links--svg" />{{item.text}}
+                                    <div>
+                                        <a href="http://sistemacennostey.ru/" rel="nofollow" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="publisher-links--svg icon sprite-icons">
+                                                <use href="/_nuxt/4fadee3e3c3f744cb913458f42b76e4d.svg#i-link-icons" xlink:href="/_nuxt/4fadee3e3c3f744cb913458f42b76e4d.svg#i-link-icons">
+                                                </use>
+                                            </svg>
+                                            sistemacennostey.ru
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.facebook.com/sistema.cennostey/" rel="nofollow" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="publisher-links--svg icon sprite-icons">
+                                                <use href="/_nuxt/4fadee3e3c3f744cb913458f42b76e4d.svg#i-link-icons" xlink:href="/_nuxt/4fadee3e3c3f744cb913458f42b76e4d.svg#i-link-icons">
+                                                </use>
+                                            </svg>
+                                            Facebook
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -330,8 +350,12 @@
                     <div class="contacts-content">
                         <div class="contacts-content__list">
                             <p class="contacts-content__list__title">По всем вопросам:</p>
-                            <p v-if="contacts && contacts.phone" class="contacts-content__list__text">Тел.: <a class="red-link" href="tel:+74951234567">{{ contacts.phone }}</a></p>
-                            <p v-if="contacts && contacts.email" class="contacts-content__list__text">E-mail: <a class="red-link" href="mailto:info@sistemacennostey.ru">{{ contacts.email }}</a></p>
+                            <p class="contacts-content__list__text">
+                                Тел.: <a href="tel:+74951234567" class="red-link">+7 (916) 1708626</a>
+                            </p>
+                            <p class="contacts-content__list__text">
+                                E-mail: <a href="mailto:info@sistemacennostey.ru" class="red-link">info@sistemacennostey.ru</a>
+                            </p>
                         </div>
                         <!-- <div class="contacts-content__info">
                             <img class="contacts-content__info__img" src="/dist/img/whatsapp.svg" alt="img">
