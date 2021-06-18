@@ -1,0 +1,2 @@
+(()=>{var t;t=function(){var t=-1;$(".inBox-item__descr").each((function(){t=t>$(this).height()?t:$(this).height()})),$(".inBox-item__descr").each((function(){$(this).height(t)}))},$((function(){$('a[href^="#"]').on("click",(function(t){t.preventDefault();var i=$(this).attr("href"),n=$(i).offset().top;$("html, body").animate({scrollTop:n},500)}))})),$(document).ready((function(){t()})),$(window).on("resize",(function(){t()}))})();
+//# sourceMappingURL=bundle.js.map

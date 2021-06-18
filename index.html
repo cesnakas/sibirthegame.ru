@@ -1,1142 +1,262 @@
-<!doctype html>
-<html data-n-head-ssr prefix="og: http://ogp.me/ns#" data-n-head="%7B%22prefix%22:%7B%22ssr%22:%22og:%20http://ogp.me/ns#%22%7D%7D">
-<head itemtype="http://schema.org/WPHeader" itemscope data-n-head="%7B%22itemtype%22:%7B%22ssr%22:%22http://schema.org/WPHeader%22%7D,%22itemscope%22:%7B%22ssr%22:%22%20%22%7D%7D">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <title>Настольная игра «Сибирь. Начало»</title>
 
-    <meta data-n-head="ssr" property="og:title" itemprop="headline" content="Настольная игра «Сибирь. Начало»">
-    <meta data-n-head="ssr" property="og:type" content="website">
-    <meta data-n-head="ssr" property="og:site_name" content="Настольная игра «Сибирь. Начало»">
-    <meta data-n-head="ssr" property="og:url" content="https://www.sibirthegame.ru">
-    <meta data-n-head="ssr" property="og:locale" content="ru">
-    <meta data-n-head="ssr" property="og:image" itemprop="image" content="/img/seo-cover.png">
-    <meta data-n-head="ssr" name="facebook-domain-verification" content="z556172h6pdp9prcjifom78mjae1tg">
-    <meta data-n-head="ssr" charset="utf-8">
-    <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
-    <meta data-n-head="ssr" data-hid="description" name="description" property="og:description" itemprop="description" content="Настольная игра «Сибирь. Начало» – игра для 2-4 игроков, которым интересно оказаться в роли покорителя Сибири XVIII века. Осваивайте со своим отрядом новые территории, находите сокровища, возводите церкви и остроги, основывайте поселения и сражайтесь с врагами! Станьте настоящим правителем земли сибирской!">
-    <meta data-n-head="ssr" name="theme-color" content="#000">
-    <meta data-n-head="ssr" name="apple-mobile-web-app-status-bar-style" content="#000">
-    <meta data-n-head="ssr" name="msapplication-navbutton-color" content="#000">
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
 
-    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link data-n-head="ssr" rel="apple-touch-icon" sizes="16x16" href="/favicon-16x16.png">
-    <link data-n-head="ssr" rel="apple-touch-icon" sizes="32x32" href="/favicon-32x32.png">
-    <link data-n-head="ssr" rel="apple-touch-icon" sizes="192x192" href="/favicon-192x192.png">
-    <link data-n-head="ssr" rel="apple-touch-icon" sizes="512x512" href="/favicon-512x512.png">
-    <link data-n-head="ssr" rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
-    <link data-n-head="ssr" rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
-    <link data-n-head="ssr" rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link data-n-head="ssr" rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-    <link data-n-head="ssr" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap">
-    <link data-n-head="ssr" rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
-    <style data-n-head="vuetify" type="text/css" id="vuetify-theme-stylesheet" nonce="undefined">
-        .v-application a {
-            color: #1976d2
-        }
-
-        .v-application .primary {
-            background-color: #1976d2!important;
-            border-color: #1976d2!important
-        }
-
-        .v-application .primary--text {
-            color: #1976d2!important;
-            caret-color: #1976d2!important
-        }
-
-        .v-application .primary.lighten-5 {
-            background-color: #c7fdff!important;
-            border-color: #c7fdff!important
-        }
-
-        .v-application .primary--text.text--lighten-5 {
-            color: #c7fdff!important;
-            caret-color: #c7fdff!important
-        }
-
-        .v-application .primary.lighten-4 {
-            background-color: #a8e0ff!important;
-            border-color: #a8e0ff!important
-        }
-
-        .v-application .primary--text.text--lighten-4 {
-            color: #a8e0ff!important;
-            caret-color: #a8e0ff!important
-        }
-
-        .v-application .primary.lighten-3 {
-            background-color: #8ac5ff!important;
-            border-color: #8ac5ff!important
-        }
-
-        .v-application .primary--text.text--lighten-3 {
-            color: #8ac5ff!important;
-            caret-color: #8ac5ff!important
-        }
-
-        .v-application .primary.lighten-2 {
-            background-color: #6aaaff!important;
-            border-color: #6aaaff!important
-        }
-
-        .v-application .primary--text.text--lighten-2 {
-            color: #6aaaff!important;
-            caret-color: #6aaaff!important
-        }
-
-        .v-application .primary.lighten-1 {
-            background-color: #488fef!important;
-            border-color: #488fef!important
-        }
-
-        .v-application .primary--text.text--lighten-1 {
-            color: #488fef!important;
-            caret-color: #488fef!important
-        }
-
-        .v-application .primary.darken-1 {
-            background-color: #005eb6!important;
-            border-color: #005eb6!important
-        }
-
-        .v-application .primary--text.text--darken-1 {
-            color: #005eb6!important;
-            caret-color: #005eb6!important
-        }
-
-        .v-application .primary.darken-2 {
-            background-color: #00479b!important;
-            border-color: #00479b!important
-        }
-
-        .v-application .primary--text.text--darken-2 {
-            color: #00479b!important;
-            caret-color: #00479b!important
-        }
-
-        .v-application .primary.darken-3 {
-            background-color: #003180!important;
-            border-color: #003180!important
-        }
-
-        .v-application .primary--text.text--darken-3 {
-            color: #003180!important;
-            caret-color: #003180!important
-        }
-
-        .v-application .primary.darken-4 {
-            background-color: #001e67!important;
-            border-color: #001e67!important
-        }
-
-        .v-application .primary--text.text--darken-4 {
-            color: #001e67!important;
-            caret-color: #001e67!important
-        }
-
-        .v-application .secondary {
-            background-color: #424242!important;
-            border-color: #424242!important
-        }
-
-        .v-application .secondary--text {
-            color: #424242!important;
-            caret-color: #424242!important
-        }
-
-        .v-application .secondary.lighten-5 {
-            background-color: #c1c1c1!important;
-            border-color: #c1c1c1!important
-        }
-
-        .v-application .secondary--text.text--lighten-5 {
-            color: #c1c1c1!important;
-            caret-color: #c1c1c1!important
-        }
-
-        .v-application .secondary.lighten-4 {
-            background-color: #a6a6a6!important;
-            border-color: #a6a6a6!important
-        }
-
-        .v-application .secondary--text.text--lighten-4 {
-            color: #a6a6a6!important;
-            caret-color: #a6a6a6!important
-        }
-
-        .v-application .secondary.lighten-3 {
-            background-color: #8b8b8b!important;
-            border-color: #8b8b8b!important
-        }
-
-        .v-application .secondary--text.text--lighten-3 {
-            color: #8b8b8b!important;
-            caret-color: #8b8b8b!important
-        }
-
-        .v-application .secondary.lighten-2 {
-            background-color: #727272!important;
-            border-color: #727272!important
-        }
-
-        .v-application .secondary--text.text--lighten-2 {
-            color: #727272!important;
-            caret-color: #727272!important
-        }
-
-        .v-application .secondary.lighten-1 {
-            background-color: #595959!important;
-            border-color: #595959!important
-        }
-
-        .v-application .secondary--text.text--lighten-1 {
-            color: #595959!important;
-            caret-color: #595959!important
-        }
-
-        .v-application .secondary.darken-1 {
-            background-color: #2c2c2c!important;
-            border-color: #2c2c2c!important
-        }
-
-        .v-application .secondary--text.text--darken-1 {
-            color: #2c2c2c!important;
-            caret-color: #2c2c2c!important
-        }
-
-        .v-application .secondary.darken-2 {
-            background-color: #171717!important;
-            border-color: #171717!important
-        }
-
-        .v-application .secondary--text.text--darken-2 {
-            color: #171717!important;
-            caret-color: #171717!important
-        }
-
-        .v-application .secondary.darken-3 {
-            background-color: #000!important;
-            border-color: #000!important
-        }
-
-        .v-application .secondary--text.text--darken-3 {
-            color: #000!important;
-            caret-color: #000!important
-        }
-
-        .v-application .secondary.darken-4 {
-            background-color: #000!important;
-            border-color: #000!important
-        }
-
-        .v-application .secondary--text.text--darken-4 {
-            color: #000!important;
-            caret-color: #000!important
-        }
-
-        .v-application .accent {
-            background-color: #82b1ff!important;
-            border-color: #82b1ff!important
-        }
-
-        .v-application .accent--text {
-            color: #82b1ff!important;
-            caret-color: #82b1ff!important
-        }
-
-        .v-application .accent.lighten-5 {
-            background-color: #fff!important;
-            border-color: #fff!important
-        }
-
-        .v-application .accent--text.text--lighten-5 {
-            color: #fff!important;
-            caret-color: #fff!important
-        }
-
-        .v-application .accent.lighten-4 {
-            background-color: #f8ffff!important;
-            border-color: #f8ffff!important
-        }
-
-        .v-application .accent--text.text--lighten-4 {
-            color: #f8ffff!important;
-            caret-color: #f8ffff!important
-        }
-
-        .v-application .accent.lighten-3 {
-            background-color: #daffff!important;
-            border-color: #daffff!important
-        }
-
-        .v-application .accent--text.text--lighten-3 {
-            color: #daffff!important;
-            caret-color: #daffff!important
-        }
-
-        .v-application .accent.lighten-2 {
-            background-color: #bce8ff!important;
-            border-color: #bce8ff!important
-        }
-
-        .v-application .accent--text.text--lighten-2 {
-            color: #bce8ff!important;
-            caret-color: #bce8ff!important
-        }
-
-        .v-application .accent.lighten-1 {
-            background-color: #9fccff!important;
-            border-color: #9fccff!important
-        }
-
-        .v-application .accent--text.text--lighten-1 {
-            color: #9fccff!important;
-            caret-color: #9fccff!important
-        }
-
-        .v-application .accent.darken-1 {
-            background-color: #6596e2!important;
-            border-color: #6596e2!important
-        }
-
-        .v-application .accent--text.text--darken-1 {
-            color: #6596e2!important;
-            caret-color: #6596e2!important
-        }
-
-        .v-application .accent.darken-2 {
-            background-color: #467dc6!important;
-            border-color: #467dc6!important
-        }
-
-        .v-application .accent--text.text--darken-2 {
-            color: #467dc6!important;
-            caret-color: #467dc6!important
-        }
-
-        .v-application .accent.darken-3 {
-            background-color: #2364aa!important;
-            border-color: #2364aa!important
-        }
-
-        .v-application .accent--text.text--darken-3 {
-            color: #2364aa!important;
-            caret-color: #2364aa!important
-        }
-
-        .v-application .accent.darken-4 {
-            background-color: #004c90!important;
-            border-color: #004c90!important
-        }
-
-        .v-application .accent--text.text--darken-4 {
-            color: #004c90!important;
-            caret-color: #004c90!important
-        }
-
-        .v-application .error {
-            background-color: #ff5252!important;
-            border-color: #ff5252!important
-        }
-
-        .v-application .error--text {
-            color: #ff5252!important;
-            caret-color: #ff5252!important
-        }
-
-        .v-application .error.lighten-5 {
-            background-color: #ffe4d5!important;
-            border-color: #ffe4d5!important
-        }
-
-        .v-application .error--text.text--lighten-5 {
-            color: #ffe4d5!important;
-            caret-color: #ffe4d5!important
-        }
-
-        .v-application .error.lighten-4 {
-            background-color: #ffc6b9!important;
-            border-color: #ffc6b9!important
-        }
-
-        .v-application .error--text.text--lighten-4 {
-            color: #ffc6b9!important;
-            caret-color: #ffc6b9!important
-        }
-
-        .v-application .error.lighten-3 {
-            background-color: #ffa99e!important;
-            border-color: #ffa99e!important
-        }
-
-        .v-application .error--text.text--lighten-3 {
-            color: #ffa99e!important;
-            caret-color: #ffa99e!important
-        }
-
-        .v-application .error.lighten-2 {
-            background-color: #ff8c84!important;
-            border-color: #ff8c84!important
-        }
-
-        .v-application .error--text.text--lighten-2 {
-            color: #ff8c84!important;
-            caret-color: #ff8c84!important
-        }
-
-        .v-application .error.lighten-1 {
-            background-color: #ff6f6a!important;
-            border-color: #ff6f6a!important
-        }
-
-        .v-application .error--text.text--lighten-1 {
-            color: #ff6f6a!important;
-            caret-color: #ff6f6a!important
-        }
-
-        .v-application .error.darken-1 {
-            background-color: #df323b!important;
-            border-color: #df323b!important
-        }
-
-        .v-application .error--text.text--darken-1 {
-            color: #df323b!important;
-            caret-color: #df323b!important
-        }
-
-        .v-application .error.darken-2 {
-            background-color: #bf0025!important;
-            border-color: #bf0025!important
-        }
-
-        .v-application .error--text.text--darken-2 {
-            color: #bf0025!important;
-            caret-color: #bf0025!important
-        }
-
-        .v-application .error.darken-3 {
-            background-color: #9f0010!important;
-            border-color: #9f0010!important
-        }
-
-        .v-application .error--text.text--darken-3 {
-            color: #9f0010!important;
-            caret-color: #9f0010!important
-        }
-
-        .v-application .error.darken-4 {
-            background-color: maroon!important;
-            border-color: maroon!important
-        }
-
-        .v-application .error--text.text--darken-4 {
-            color: maroon!important;
-            caret-color: maroon!important
-        }
-
-        .v-application .info {
-            background-color: #2196f3!important;
-            border-color: #2196f3!important
-        }
-
-        .v-application .info--text {
-            color: #2196f3!important;
-            caret-color: #2196f3!important
-        }
-
-        .v-application .info.lighten-5 {
-            background-color: #d4ffff!important;
-            border-color: #d4ffff!important
-        }
-
-        .v-application .info--text.text--lighten-5 {
-            color: #d4ffff!important;
-            caret-color: #d4ffff!important
-        }
-
-        .v-application .info.lighten-4 {
-            background-color: #b5ffff!important;
-            border-color: #b5ffff!important
-        }
-
-        .v-application .info--text.text--lighten-4 {
-            color: #b5ffff!important;
-            caret-color: #b5ffff!important
-        }
-
-        .v-application .info.lighten-3 {
-            background-color: #95e8ff!important;
-            border-color: #95e8ff!important
-        }
-
-        .v-application .info--text.text--lighten-3 {
-            color: #95e8ff!important;
-            caret-color: #95e8ff!important
-        }
-
-        .v-application .info.lighten-2 {
-            background-color: #75ccff!important;
-            border-color: #75ccff!important
-        }
-
-        .v-application .info--text.text--lighten-2 {
-            color: #75ccff!important;
-            caret-color: #75ccff!important
-        }
-
-        .v-application .info.lighten-1 {
-            background-color: #51b0ff!important;
-            border-color: #51b0ff!important
-        }
-
-        .v-application .info--text.text--lighten-1 {
-            color: #51b0ff!important;
-            caret-color: #51b0ff!important
-        }
-
-        .v-application .info.darken-1 {
-            background-color: #007cd6!important;
-            border-color: #007cd6!important
-        }
-
-        .v-application .info--text.text--darken-1 {
-            color: #007cd6!important;
-            caret-color: #007cd6!important
-        }
-
-        .v-application .info.darken-2 {
-            background-color: #0064ba!important;
-            border-color: #0064ba!important
-        }
-
-        .v-application .info--text.text--darken-2 {
-            color: #0064ba!important;
-            caret-color: #0064ba!important
-        }
-
-        .v-application .info.darken-3 {
-            background-color: #004d9f!important;
-            border-color: #004d9f!important
-        }
-
-        .v-application .info--text.text--darken-3 {
-            color: #004d9f!important;
-            caret-color: #004d9f!important
-        }
-
-        .v-application .info.darken-4 {
-            background-color: #003784!important;
-            border-color: #003784!important
-        }
-
-        .v-application .info--text.text--darken-4 {
-            color: #003784!important;
-            caret-color: #003784!important
-        }
-
-        .v-application .success {
-            background-color: #4caf50!important;
-            border-color: #4caf50!important
-        }
-
-        .v-application .success--text {
-            color: #4caf50!important;
-            caret-color: #4caf50!important
-        }
-
-        .v-application .success.lighten-5 {
-            background-color: #dcffd6!important;
-            border-color: #dcffd6!important
-        }
-
-        .v-application .success--text.text--lighten-5 {
-            color: #dcffd6!important;
-            caret-color: #dcffd6!important
-        }
-
-        .v-application .success.lighten-4 {
-            background-color: #beffba!important;
-            border-color: #beffba!important
-        }
-
-        .v-application .success--text.text--lighten-4 {
-            color: #beffba!important;
-            caret-color: #beffba!important
-        }
-
-        .v-application .success.lighten-3 {
-            background-color: #a2ff9e!important;
-            border-color: #a2ff9e!important
-        }
-
-        .v-application .success--text.text--lighten-3 {
-            color: #a2ff9e!important;
-            caret-color: #a2ff9e!important
-        }
-
-        .v-application .success.lighten-2 {
-            background-color: #85e783!important;
-            border-color: #85e783!important
-        }
-
-        .v-application .success--text.text--lighten-2 {
-            color: #85e783!important;
-            caret-color: #85e783!important
-        }
-
-        .v-application .success.lighten-1 {
-            background-color: #69cb69!important;
-            border-color: #69cb69!important
-        }
-
-        .v-application .success--text.text--lighten-1 {
-            color: #69cb69!important;
-            caret-color: #69cb69!important
-        }
-
-        .v-application .success.darken-1 {
-            background-color: #2d9437!important;
-            border-color: #2d9437!important
-        }
-
-        .v-application .success--text.text--darken-1 {
-            color: #2d9437!important;
-            caret-color: #2d9437!important
-        }
-
-        .v-application .success.darken-2 {
-            background-color: #00791e!important;
-            border-color: #00791e!important
-        }
-
-        .v-application .success--text.text--darken-2 {
-            color: #00791e!important;
-            caret-color: #00791e!important
-        }
-
-        .v-application .success.darken-3 {
-            background-color: #006000!important;
-            border-color: #006000!important
-        }
-
-        .v-application .success--text.text--darken-3 {
-            color: #006000!important;
-            caret-color: #006000!important
-        }
-
-        .v-application .success.darken-4 {
-            background-color: #004700!important;
-            border-color: #004700!important
-        }
-
-        .v-application .success--text.text--darken-4 {
-            color: #004700!important;
-            caret-color: #004700!important
-        }
-
-        .v-application .warning {
-            background-color: #fb8c00!important;
-            border-color: #fb8c00!important
-        }
-
-        .v-application .warning--text {
-            color: #fb8c00!important;
-            caret-color: #fb8c00!important
-        }
-
-        .v-application .warning.lighten-5 {
-            background-color: #ffff9e!important;
-            border-color: #ffff9e!important
-        }
-
-        .v-application .warning--text.text--lighten-5 {
-            color: #ffff9e!important;
-            caret-color: #ffff9e!important
-        }
-
-        .v-application .warning.lighten-4 {
-            background-color: #fffb82!important;
-            border-color: #fffb82!important
-        }
-
-        .v-application .warning--text.text--lighten-4 {
-            color: #fffb82!important;
-            caret-color: #fffb82!important
-        }
-
-        .v-application .warning.lighten-3 {
-            background-color: #ffdf67!important;
-            border-color: #ffdf67!important
-        }
-
-        .v-application .warning--text.text--lighten-3 {
-            color: #ffdf67!important;
-            caret-color: #ffdf67!important
-        }
-
-        .v-application .warning.lighten-2 {
-            background-color: #ffc24b!important;
-            border-color: #ffc24b!important
-        }
-
-        .v-application .warning--text.text--lighten-2 {
-            color: #ffc24b!important;
-            caret-color: #ffc24b!important
-        }
-
-        .v-application .warning.lighten-1 {
-            background-color: #ffa72d!important;
-            border-color: #ffa72d!important
-        }
-
-        .v-application .warning--text.text--lighten-1 {
-            color: #ffa72d!important;
-            caret-color: #ffa72d!important
-        }
-
-        .v-application .warning.darken-1 {
-            background-color: #db7200!important;
-            border-color: #db7200!important
-        }
-
-        .v-application .warning--text.text--darken-1 {
-            color: #db7200!important;
-            caret-color: #db7200!important
-        }
-
-        .v-application .warning.darken-2 {
-            background-color: #bb5900!important;
-            border-color: #bb5900!important
-        }
-
-        .v-application .warning--text.text--darken-2 {
-            color: #bb5900!important;
-            caret-color: #bb5900!important
-        }
-
-        .v-application .warning.darken-3 {
-            background-color: #9d4000!important;
-            border-color: #9d4000!important
-        }
-
-        .v-application .warning--text.text--darken-3 {
-            color: #9d4000!important;
-            caret-color: #9d4000!important
-        }
-
-        .v-application .warning.darken-4 {
-            background-color: #802700!important;
-            border-color: #802700!important
-        }
-
-        .v-application .warning--text.text--darken-4 {
-            color: #802700!important;
-            caret-color: #802700!important
-        }
-    </style>
-    <link rel="preload" href="/_nuxt/runtime.b982172.js" as="script">
-    <link rel="preload" href="/_nuxt/commons/app.747ec20.js" as="script">
-    <link rel="preload" href="/_nuxt/vendors~app.bb6a69e.css" as="style">
-    <link rel="preload" href="/_nuxt/vendors~app.565f0ad.js" as="script">
-    <link rel="preload" href="/_nuxt/app.edfaf28.css" as="style">
-    <link rel="preload" href="/_nuxt/app.fec6582.js" as="script">
-    <link rel="preload" href="/_nuxt/pages/index.fbba620.js" as="script">
-    <link rel="preload" href="/_nuxt/vendors~pages/index.0d79d52.css" as="style">
-    <link rel="preload" href="/_nuxt/vendors~pages/index.2cbd332.js" as="script">
-    <link rel="stylesheet" href="/_nuxt/vendors~app.bb6a69e.css">
-    <link rel="stylesheet" href="/_nuxt/app.edfaf28.css">
-    <link rel="stylesheet" href="/_nuxt/vendors~pages/index.0d79d52.css">
+    <link rel="stylesheet" href="/dist/css/style.bundle.css" />
 
 </head>
 <body>
-<div data-server-rendered="true" id="__nuxt">
-    <!---->
-    <div id="__layout">
-        <div data-app="">
-            <header class="header">
-                <div class="wrap header-wrap">
-                    <a href="/" class="header-logo">
-                        <img src="/img/logo.png" alt="" class="header-logo__img">
-                        <span class="header-logo__text">
-                                    Историческая<br>настольная игра
-                                </span>
-                    </a>
-                    <nav itemscope itemtype="http://schema.org/SiteNavigationElement" class="header-nav">
-                        <ul class="header-nav__ul">
-                            <li class="header-nav__li">
-                                <a href="/#mechanics" itemprop="url" class="header-nav__link">Механика игры</a>
-                            </li>
-                            <li class="header-nav__li">
-                                <a href="/#inBox" itemprop="url" class="header-nav__link">Что в коробке</a>
-                            </li>
-                            <li class="header-nav__li">
-                                <a href="/encyclopedia" itemprop="url" class="header-nav__link">Словник</a>
-                            </li>
-                            <li class="header-nav__li">
-                                <a href="/#publisher" itemprop="url" class="header-nav__link">Об издателе</a>
-                            </li>
-                            <li class="header-nav__li">
-                                <a href="/#contacts" itemprop="url" class="header-nav__link">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <a class="red-outline-btn header__btn">Купить игру</a>
-                    <img src="/img/burger.svg" alt="Меню" class="header-burger js-header-btn">
-                    <div class="header-mobileMenu js-mobile-menu">
-                        <ul class="header-mobileMenu__ul">
-                            <li class="header-mobileMenu__li">
-                                <a href="/#mechanics" class="header-mobileMenu__link">Механика игры</a>
-                            </li>
-                            <li class="header-mobileMenu__li">
-                                <a href="/#inBox" class="header-mobileMenu__link">Что в коробке</a>
-                            </li>
-                            <li class="header-mobileMenu__li">
-                                <a href="/encyclopedia" class="header-mobileMenu__link">Словник</a>
-                            </li>
-                            <li class="header-mobileMenu__li">
-                                <a href="/#publisher" class="header-mobileMenu__link">Об издателе</a>
-                            </li>
-                            <li class="header-mobileMenu__li">
-                                <a href="/#contacts" class="header-mobileMenu__link">Контакты</a>
-                            </li>
-                        </ul>
-                        <a class="red-outline-btn header-mobileMenu__btn">Купить игру
-                        </a>
-                    </div>
-                </div>
-            </header>
-            <main class="content">
-                <div>
-                    <section itemscope itemtype="http://schema.org/Product" class="banner">
-                        <div class="wrap banner-wrap">
-                            <div class="banner-left">
-                                <div class="banner-preOrder">
-                                    <div class="banner-preorder__left">
-                                        <img itemprop="image" src="/img/box-img.png" alt="Коробка с игрой" class="banner-preOrder__img">
-                                    </div>
-                                    <div itemprop="offers" class="banner-preOrder__right">
-                                        <meta itemprop="name" content="Настольная игра «Сибирь. Начало»">
-                                        <meta itemprop="description" content="Настольная игра «Сибирь. Начало» – игра для 2-4 игроков, которым интересно оказаться в роли покорителя Сибири XVIII века. Осваивайте со своим отрядом новые территории, находите сокровища, возводите церкви и остроги, основывайте поселения и сражайтесь с врагами! Станьте настоящим правителем земли сибирской!">
-                                        <meta itemprop="priceCurrency" content="RUB">
-                                        <p class="banner-preOrder__title"></p>
-                                        <p class="banner-preOrder__price">
-                                            <span itemprop="price" class="banner-preOrder__price--number"></span>
-                                        </p>
-                                        <!---->
-                                        <div class="banner-preOrder__img--mobile"></div>
-                                        <!---->
-                                        <div class="banner-preOrder__descr--mobile"></div>
-                                        <a class="black-btn banner-preOrder__btn">Купить</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="/img/cover.png" alt="Персонажи" class="banner-cover">
-                            <div class="banner-cover--mobile" style="background-image:url(/img/cover-mobile.jpg)"></div>
-                        </div>
-                    </section>
-                    <section class="limitations">
-                        <div class="wrap limitations-wrap">
-                            <div class="limitations--text"></div>
-                            <div class="limitations-list"></div>
-                        </div>
-                    </section>
-                    <section id="mechanics" class="mechanics">
-                        <div class="wrap mechanics-wrap">
-                            <h2 class="h2 mechanics__h2"></h2>
-                            <!---->
-                            <div class="mechanics-list"></div>
-                            <!---->
-                        </div>
-                    </section>
-                    <section id="inBox" class="inBox">
-                        <div class="wrap inBox-wrap">
-                            <h2 class="h2 inBox__h2">Что в коробке?</h2>
-                            <div class="inBox-list"></div>
-                            <div class="swiper-container inBox-slider">
-                                <div class="swiper-wrapper"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
-                        <a href="" target="_blank" class="red-btn inBox-btn">Скачать правила .pdf </a>
-                    </section>
-                    <section class="vocabulary">
-                        <div class="wrap vocabulary-wrap">
-                            <div class="vocabulary-content">
-                                <img src="img/logo-mini.png" alt="Лого Сибирь" class="vocabulary-content__logo">
-                                <img src="img/slovnik-title.svg" alt="Словник" class="vocabulary-content__title">
-                                <p class="vocabulary-content__descr">
-                                    Хотите узнать как собрать <b>ясак</b>
-                                    ? Как найти <b>шамана</b>
-                                    ?
-                                    Кто такой <b>целовальник</b>
-                                    ? Что такое <b>мягкая рухлядь</b>
-                                    ?
-                                    Читайте наш <b>Словник</b>
-                                    и узнайте больше
-                                    об истории Сибири.
-                                </p>
-                                <img src="img/characters.png" alt="Персонажи" class="vocabulary-content__characters">
-                                <a href="/encyclopedia" class="red-btn vocabulary-content__btn">Читать</a>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="preorder" class="preOrder">
-                        <div class="wrap preOrder-wrap">
-                            <div class="preOrder--inner">
-                                <div class="preOrder-left">
-                                    <img src="img/game_box.png" alt="Коробка с игрой" class="preOrder-left__img">
-                                    <strong class="preOrder-left-content__descr mobile-only"></strong>
-                                    <p class="preOrder-left-content__descr mobile-only"></p>
-                                    <a class="black-btn preOrder-right__btn mobile-only">Купить</a>
-                                </div>
-                                <div class="preOrder-right">
-                                    <p class="preOrder-right__text">Цена:</p>
-                                    <p class="preOrder-right__price">
-                                        <span class="preOrder-right__price--number"></span>
-                                    </p>
-                                    <p class="preOrder-right__descr"></p>
-                                    <a class="red-btn preOrder-right__btn mobile-none">Купить</a>
-                                    <h3 class="preOrder-left-content__title mobile-none"></h3>
-                                    <p class="preOrder-left-content__descr mobile-none"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="publisher" class="publisher">
-                            <div class="wrap">
-                                <h2 class="h2 contacts__h2">Об издателе
-                                </h2>
-                                <div class="publisher-content">
-                                    <div class="publisher-item">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="publisher-item--svg icon sprite-icons">
-                                            <use href="/_nuxt/4fadee3e3c3f744cb913458f42b76e4d.svg#i-logo-cvz" xlink:href="/_nuxt/4fadee3e3c3f744cb913458f42b76e4d.svg#i-logo-cvz"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="publisher-item">
-                                        <div class="publisher-item-info">
-                                            <!---->
-                                            <div class="publisher-item-info__links"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="contacts" class="contacts">
-                            <div class="wrap contacts-wrap">
-                                <h2 class="h2 contacts__h2">Контакты</h2>
-                                <div class="contacts-content">
-                                    <div class="contacts-content__list">
-                                        <p class="contacts-content__list__title">По всем вопросам:</p>
-                                        <!---->
-                                        <!---->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!---->
-                <div role="dialog" class="v-dialog__container">
-                    <!---->
-                </div>
-                <div role="dialog" class="v-dialog__container">
-                    <!---->
-                </div>
-                <div role="dialog" class="v-dialog__container">
-                    <!---->
-                </div>
-                <div role="dialog" class="v-dialog__container">
-                    <!---->
-                </div>
-                <div role="dialog" class="v-dialog__container" data-v-25d5b84c>
-                    <!---->
-                </div>
-            </main>
-            <footer itemscope itemtype="http://schema.org/WPFooter" class="footer">
-                <div class="wrap footer-wrap">
-                    <div class="footer-bottom">
-                        <div class="footer-copyrigh">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="footer-copyrigh__img icon sprite-icons">
-                                <use href="/_nuxt/4fadee3e3c3f744cb913458f42b76e4d.svg#i-logo-cvz" xlink:href="/_nuxt/4fadee3e3c3f744cb913458f42b76e4d.svg#i-logo-cvz"></use>
-                            </svg>
-                            <p class="footer-copyrigh__text"></p>
-                            <meta itemprop="copyrightYear" content="2021">
-                            <meta itemprop="copyrightHolder" content="Система вечных ценностей">
-                        </div>
-                        <img src="/img/logo.png" alt="" class="footer__logo">
-                        <div class="footer-info">
-                            <div class="footer-info__col">
-                                <h4 class="footer-info__h4">Помощь</h4>
-                                <a class="footer-info__link">Реквизиты</a>
-                                <a class="footer-info__link">Способы оплаты</a>
-                                <a class="footer-info__link">Доставка</a>
-                                <a class="footer-info__link">Правила возврата товара</a>
-                            </div>
-                        </div>
-                        <div class="footer-social">
-                            <!---->
-                        </div>
-                    </div>
-                </div>
-            </footer>
+
+    <header class="header">
+        <div class="wrap header-wrap">
+            <div class="header-logo">
+                <img src="/dist/img/logo.png" class="header-logo__img" alt="img">
+                <span class="header-logo__text">Историческая<br/>настольная игра</span>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav__ul">
+                    <li class="header-nav__li">
+                        <a class="header-nav__link" href="#mechanics">Механика игры</a>
+                    </li>
+                    <li class="header-nav__li">
+                        <a class="header-nav__link" href="#inBox">Что в коробке</a>
+                    </li>
+                    <li class="header-nav__li">
+                        <a class="header-nav__link" href="encyclopedia.html">Словник</a>
+                    </li>
+                    <li class="header-nav__li">
+                        <a class="header-nav__link" href="#publisher">Предзаказ</a>
+                    </li>
+                    <li class="header-nav__li">
+                        <a class="header-nav__link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="red-outline-btn header__btn">Купить игру</a>
+            <img src="/dist/img/burger.svg" class="header-burger" alt="img">
         </div>
-    </div>
-</div>
-<script>
-    window.__NUXT__ = function(e, a, i, t, o, n, r, s, l, h, d, c) {
-        return {
-            layout: "default",
-            data: [{}],
-            fetch: [],
-            error: t,
-            state: {
-                device: "desktop",
-                phone: "+77777777777",
-                global: {
-                    logo: "/img/logo.png",
-                    logo_alt: e,
-                    author_logo: "/img/author.svg",
-                    game_price: e,
-                    game_currency: e,
-                    contacts: {},
-                    banner: {},
-                    copyright: e,
-                    rules: e,
-                    order_text: e,
-                    pickUpText: e,
-                    desc: e,
-                    link_list: t,
-                    publisher_title: e
-                },
-                header: {
-                    header_menu: [{
-                        name: o,
-                        path: a,
-                        hash: n
-                    }, {
-                        name: r,
-                        path: a,
-                        hash: s
-                    }, {
-                        name: l,
-                        path: h,
-                        hash: e
-                    }, {
-                        name: "Об издателе",
-                        path: a,
-                        hash: "#publisher"
-                    }, {
-                        name: d,
-                        path: a,
-                        hash: c
-                    }],
-                    is_mobile_menu_show: i
-                },
-                footer: {
-                    footer_menu: [{
-                        name: o,
-                        path: a,
-                        hash: n
-                    }, {
-                        name: r,
-                        path: a,
-                        hash: s
-                    }, {
-                        name: l,
-                        path: h,
-                        hash: e
-                    }, {
-                        name: "Предзаказ",
-                        path: a,
-                        hash: "#preorder"
-                    }, {
-                        name: d,
-                        path: a,
-                        hash: c
-                    }]
-                },
-                orderingDialog: {
-                    ordering_dialog: {
-                        visible: i,
-                        data: {
-                            name: e,
-                            email: e,
-                            phone: e,
-                            delivery_method: "courier",
-                            full_address: e,
-                            city: e,
-                            country: e,
-                            apartment: e,
-                            postcode: e,
-                            entrance: e,
-                            floor: e,
-                            intercom: e,
-                            radioGroup: "rus_post_land",
-                            quantity: 1,
-                            cost: 1701,
-                            cost_of_delivery: 0,
-                            toPay: 1701,
-                            allDelivery: t,
-                            formLink: t,
-                            agreement: i
-                        }
-                    },
-                    ordering_notification: {
-                        visible: i
-                    }
-                },
-                helpDialogs: {
-                    requisites_dialog: {
-                        visible: i,
-                        data: []
-                    },
-                    payment_dialog: {
-                        visible: i,
-                        data: []
-                    },
-                    delivery_dialog: {
-                        visible: i,
-                        data: []
-                    },
-                    purchaseReturns_dialog: {
-                        visible: i,
-                        data: []
-                    }
-                },
-                inBox: {
-                    title: "Что в коробке?",
-                    descr: e,
-                    inBox_list: [],
-                    regulations_file: a
-                },
-                slovnik: {
-                    descr: e,
-                    slovnik_list: []
-                },
-                limitations: {
-                    desc: e,
-                    limitations_list: []
-                },
-                mechanics: {
-                    title: e,
-                    descr: e,
-                    mechanics_list: [],
-                    video: e
-                }
-            },
-            serverRendered: !0,
-            routePath: a,
-            config: {}
-        }
-    }("", "/", !1, null, "Механика игры", "#mechanics", "Что в коробке", "#inBox", "Словник", "/encyclopedia", "Контакты", "#contacts")
-</script>
-<script src="/_nuxt/runtime.b982172.js" defer></script>
-<script src="/_nuxt/pages/index.fbba620.js" defer></script>
-<script src="/_nuxt/vendors~pages/index.2cbd332.js" defer></script>
-<script src="/_nuxt/commons/app.747ec20.js" defer></script>
-<script src="/_nuxt/vendors~app.565f0ad.js" defer></script>
-<script src="/_nuxt/app.fec6582.js" defer></script>
+    </header>
+
+    <main class="content">
+
+        <section class="banner">
+            <div class="wrap banner-wrap">
+                 <div class="banner-left">
+                    <img src="/dist/img/logo.png" class="banner-left__logo" alt="img">
+                    <div class="banner-preOrder">
+                        <img src="/dist/img/game_box.png" class="banner-preOrder__img" alt="img">
+                        <a class="black-btn">Купить</a>
+                    </div>
+                </div>
+                <img src="/dist/img/cover.png" class="banner-cover" alt="img">
+            </div>
+        </section>
+
+        <section class="limitations">
+            <div class="wrap limitations-wrap">
+                <div class="limitations-list">
+                    <div class="limitations-list__item">
+                        <img class="limitations-list__item__img" src="/dist/img/limitation_age.png" alt="img">
+                        <b class="limitations-list__item__title">Возраст</b>
+                        <p class="limitations-list__item__descr">от 8 лет</p>
+                    </div>
+                    <div class="limitations-list__item">
+                        <img class="limitations-list__item__img" src="/dist/img/limitation_players.png" alt="img">
+                        <b class="limitations-list__item__title">Количество игроков</b>
+                        <p class="limitations-list__item__descr">2–4</p>
+                    </div>
+                    <div class="limitations-list__item">
+                        <img class="limitations-list__item__img" src="/dist/img/limitation_time.png" alt="img">
+                        <b class="limitations-list__item__title">Длительность игры</b>
+                        <p class="limitations-list__item__descr">30–60 минут</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mechanics" class="mechanics">
+            <div class="wrap mechanics-wrap">
+                <h2 class="h2 mechanics__h2">Механика игры</h2>
+                <p class="mechanics__descr">Поочередно выставляя от стартового поля и осваивая тайлы карты земель Сибири,
+                    игроки передвигают по ней своих ватажников так, чтобы их расположение на объектах карты соответствовало требованиям различных заданий. В конце каждого хода игрок должен постараться выполнить одно или несколько выбранных им заданий.<br/>
+                    Каждое выполненное задание приносит игроку победные очки. <br/>
+                    <span class="red-text">Побеждает в игре тот, кто в конце партии наберет наибольшее
+            количество очков.</span></p>
+                <div class="mechanics-list">
+                    <div class="mechanics-item">
+                        <img src="/dist/img/mechanics_1.png" class="mechanics-item__img" alt="img">
+                        <h4 class="mechanics-item__title">Открывай новые территории</h4>
+                        <p class="mechanics-item__descr">Выкладывай тайлы новых земель
+                            и передвигай своих ватажников по тундре,
+                            тайге и степи. Осваивай земли,
+                            переворачивая тайлы.</p>
+                    </div>
+                    <div class="mechanics-item">
+                        <img src="/dist/img/mechanics_2.png" class="mechanics-item__img" alt="img">
+                        <h4 class="mechanics-item__title">Выполняй задания</h4>
+                        <p class="mechanics-item__descr">Выбирай карточки заданий,
+                            выполняй их и зарабатывай очки
+                            для победы в игре. Сложные задания
+                            дают больше очков!</p>
+                    </div>
+                    <div class="mechanics-item">
+                        <img src="/dist/img/mechanics_3.png" class="mechanics-item__img" alt="img">
+                        <h4 class="mechanics-item__title">Действуй стратегически</h4>
+                        <p class="mechanics-item__descr">Выстраивай своих ватажников таким образом, чтобы быстрее выполнять задания и мешать делать это соперникам.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="inBox" class="inBox">
+            <div class="wrap inBox-wrap">
+                <h2 class="h2 inBox__h2">Что в коробке?</h2>
+                <div class="inBox-list">
+                    <div class="inBox-item">
+                        <img src="/dist/img/inBox_1.png" class="inBox-item__img" alt="img">
+                        <h4 class="inBox-item__title">1 стартовое игровое поле</h4>
+                        <p class="inBox-item__descr">(Уральский хребет);</p>
+                    </div>
+                    <div class="inBox-item">
+                        <img src="/dist/img/inBox_2.png" class="inBox-item__img" alt="img">
+                        <h4 class="inBox-item__title">90 квадратных двусторонних тайлов земель Сибири трех видов:</h4>
+                        <p class="inBox-item__descr">30 тайлов тундры, 30 тайлов тайги, 30 тайлов степи</p>
+                    </div>
+                    <div class="inBox-item">
+                        <img src="/dist/img/inBox_3.png" class="inBox-item__img" alt="img">
+                        <h4 class="inBox-item__title">20 фигурок ватажников</h4>
+                        <p class="inBox-item__descr">4 разных цветов</p>
+                    </div>
+                    <div class="inBox-item inBox-item--big">
+                        <img src="/dist/img/inBox_4.png" class="inBox-item__img" alt="img">
+                        <h4 class="inBox-item__title">60 карт заданий:</h4>
+                        <p class="inBox-item__descr">20 заданий «Сокровища Сибири», 20 заданий «Новый уклад», 20 заданий «Свои да чужие»</p>
+                    </div>
+                    <div class="inBox-item inBox-item--big">
+                        <img src="/dist/img/inBox_5.png" class="inBox-item__img" alt="img">
+                        <h4 class="inBox-item__title">Правила игры и памятка превращения тайлов</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vocabulary">
+            <div class="wrap vocabulary-wrap">
+                <div class="vocabulary-content">
+                    <img class="vocabulary-content__logo" src="/dist/img/logo-mini.png" alt="Лого Сибирь">
+                    <img class="vocabulary-content__title" src="/dist/img/slovnik-title.svg" alt="Словник">
+                    <p class="vocabulary-content__descr">Хотите узнать как собрать <b>ясак</b>? Как найти <b>шамана</b>?
+                        Кто такой <b>целовальник</b>? Что такое <b>мягкая рухлядь</b>?
+                        Читайте наш <b>Словник</b> и узнайте больше
+                        об истории Сибири.</p>
+                    <img class="vocabulary-content__characters" src="/dist/img/characters.png" alt="Персонажи">
+                    <a class="red-btn vocabulary-content__btn" href="/encyclopedia">Читать</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="preorder" class="preOrder">
+            <div class="wrap preOrder-wrap">
+                <div class="preOrder--inner">
+                    <div class="preOrder-left">
+                        <img class="preOrder-left__img" src="/dist/img/game_box.png" alt="Коробка с игрой">
+                        <strong v-html="banner.bottom_banner_title" class="preOrder-left-content__descr mobile-only"></strong>
+                        <p v-html="banner.bottom_banner_desc" class="preOrder-left-content__descr mobile-only"> </p>
+                        <a @click="click_buy" class="black-btn preOrder-right__btn mobile-only">Купить</a>
+                    </div>
+                    <div class="preOrder-right">
+                        <p class="preOrder-right__text">Цена:</p>
+                        <p class="preOrder-right__price"><span class="preOrder-right__price--number">{{game_price}}</span> рубль</p>
+                        <p v-html="banner.after_price" class="preOrder-right__descr"></p>
+                        <a @click="click_buy" class="red-btn preOrder-right__btn mobile-none">Купить</a>
+                        <h3 v-html="banner.bottom_banner_title" class="preOrder-left-content__title mobile-none"></h3>
+                        <p v-html="banner.bottom_banner_desc" class="preOrder-left-content__descr mobile-none"></p>
+                        <!-- <div class="preOder-dislaimer">
+                            <p>* - предзаказная цена действительна до <b>1 декабря 2020 года</b></p>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+            <div id="publisher" class="publisher">
+                <div class="wrap">
+                    <h2 class="h2 contacts__h2">
+                        Об издателе
+                    </h2>
+                    <div class="publisher-content">
+                        <div class="publisher-item">
+                            <svg-icon name="logo_cvz" class="publisher-item--svg" />
+                        </div>
+                        <div class="publisher-item">
+                            <div class="publisher-item-info">
+                                <div v-if="desc" v-html="desc" class="infos"></div>
+
+                                <div class="publisher-item-info__links">
+                                    <div v-for="(item,index) in link_list" :key="index">
+                                        <a :href="item.link" rel="nofollow" target="_blank">
+                                            <svg-icon name="link-icons" class="publisher-links--svg" />{{item.text}}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contacts" class="contacts">
+                <div class="wrap contacts-wrap">
+                    <h2 class="h2 contacts__h2">Контакты</h2>
+                    <div class="contacts-content">
+                        <div class="contacts-content__list">
+                            <p class="contacts-content__list__title">По всем вопросам:</p>
+                            <p v-if="contacts && contacts.phone" class="contacts-content__list__text">Тел.: <a class="red-link" href="tel:+74951234567">{{ contacts.phone }}</a></p>
+                            <p v-if="contacts && contacts.email" class="contacts-content__list__text">E-mail: <a class="red-link" href="mailto:info@sistemacennostey.ru">{{ contacts.email }}</a></p>
+                        </div>
+                        <!-- <div class="contacts-content__info">
+                            <img class="contacts-content__info__img" src="/dist/img/whatsapp.svg" alt="img">
+                            <p class="contacts-content__info__text">Также вы можете заказать игру, связавшись с нами в <a :href="contacts.whatsapp" class="red-link">WhatsApp</a></p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer-wrap">
+            <nav class="footer-nav">
+                <ul class="footer-nav__ul">
+                    <li class="footer-nav__li">
+                        <a class="footer-nav__link" href="#">Механика игры</a>
+                    </li>
+                    <li class="footer-nav__li">
+                        <a class="footer-nav__link" href="#">Что в коробке</a>
+                    </li>
+                    <li class="footer-nav__li">
+                        <a class="footer-nav__link" href="#">Словник</a>
+                    </li>
+                    <li class="footer-nav__li">
+                        <a class="footer-nav__link" href="#">Предзаказ</a>
+                    </li>
+                    <li class="footer-nav__li">
+                        <a class="footer-nav__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div></div>
+        </div>
+    </footer>
+
+    <script src="/dist/libs/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+    <script src="/dist/js/bundle.js"></script>
 
 </body>
 </html>
