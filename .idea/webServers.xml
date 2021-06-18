@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c2fab796-2c0d-462a-8599-88c6dc0e60e5" name="siberthegame.cesnakas.com" url="http://siberthegame.cesnakas.com">
+        <fileTransfer rootFolder="/www/siberthegame.cesnakas.com" host="siberthegame.cesnakas.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
