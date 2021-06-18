@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    font-family: $main-font;
+}
+
+body {
+    background-color: $main-bg;
+}
+a, button {
+    cursor: pointer;
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    flex: 1;
+}
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.h2 {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    position: relative;
+
+    @include mobile {
+        font-size: 25px;
+    }
+
+    &:after, &:before {
+        content:"";
+        display: block;
+        width: 71px;
+        height: 1px;
+        background-color: $gray-light;
+        position: absolute;
+        top: 50%;
+        @include mobile-s {
+            background-color: $red;
+        }
+    }
+    &:after {
+        left: -85px;
+    }
+    &:before {
+        right: -85px;
+    }
+}
+.red-text {
+    color: #B54C3E;
+}
+.red-outline-btn {
+    color: $red;
+    font-size: 17px;
+    border: 2px solid $red;
+    border-radius: 50px;
+    padding: 10px 40px;
+    min-width: 200px;
+    text-align: center;
+    @include transition;
+    &:hover {
+        color: $white;
+        background: $red;
+    }
+}
+.black-btn {
+    color: $white;
+    background: $black;
+    font-size: 17px;
+    border-radius: 50px;
+    padding: 10px 40px;
+    min-width: 200px;
+    text-align: center;
+    @include transition;
+    &:hover {
+        background: $red;
+    }
+}

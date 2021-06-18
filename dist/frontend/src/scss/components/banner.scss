@@ -1,0 +1,14 @@
+.banner {
+    background: url('../img/bg_banner.png') no-repeat;
+    background-size: cover;
+    max-height: 560px;
+}
+.banner-wrap {
+    display: flex;
+}
+.banner-preOrder{
+    background: $red;
+}
+.banner-cover {
+    max-height: 600px;
+}

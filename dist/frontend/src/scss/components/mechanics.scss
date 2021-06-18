@@ -1,0 +1,53 @@
+.mechanics {
+    padding: 50px 0;
+}
+.mechanics-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mechanics__h2 {
+    margin: 0 0 60px 0;
+}
+.mechanics__descr{
+    text-align: center;
+    margin: 0 0 85px 0;
+    color: $gray-medium;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: $col-8;
+    @include tablet {
+        max-width: $col-10;
+    }
+    @include mobile {
+        max-width: $col-12;
+    }
+}
+.mechanics-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mechanics-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $col-4;
+    text-align: center;
+    @include adaptive {
+        width: $col-12;
+    }
+}
+.mechanics-item__img {
+    margin-bottom: 50px;
+    max-width: 100%;
+}
+.mechanics-item__title {
+    color: $black;
+    margin: 0 0 20px 0;
+}
+.mechanics-item__descr {
+    color: $gray-medium;
+    line-height: 20px;
+    margin: 0;
+}
