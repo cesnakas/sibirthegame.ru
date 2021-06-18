@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    font-family: $main-font;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: $main-bg;
+}
+a ,
+button {
+    cursor: pointer;
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+// h2, h3 {
+//     font-family: $title-font;
+// }
+.content {
+    margin-top: 90px;
+    flex: 1;
+}
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    @include mobile {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    @include mobile {
+        font-size: 25px;
+    }
+
+    &:after ,
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 70px;
+        height: 1px;
+        background-color: $gray-light;
+        z-index: -1;
+        position: relative;
+        vertical-align: middle;
+        @include mobile-s {
+            background-color: $red;
+        }
+    }
+    &:after {
+        left: 20px;
+        margin: 0 -100% 0 0;
+    }
+    &:before {
+        right: 20px;
+        margin: 0 0 0 -100%;
+    }
+}
+.red-text {
+    color: $red;
+}
+.red-link {
+    color: $red;
+    &:hover {
+        color: $red-dark;
+    }
+}
+.red-btn {
+    color: $white;
+    background: $red;
+    font-size: 17px;
+    border-radius: 50px;
+    padding: 10px 50px;
+    min-width: 200px;
+    text-align: center;
+    @include transition;
+    &:hover {
+        background: $black;
+    }
+}
+
+@supports ( filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.2)) ) {
+    .red-btn {
+        filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.2));
+    }
+}
+
+.red-outline-btn {
+    color: $red;
+    font-size: 17px;
+    border: 2px solid $red;
+    border-radius: 50px;
+    padding: 10px 40px;
+    min-width: 200px;
+    text-align: center;
+    @include transition;
+    &:hover {
+        color: $white;
+        background: $red;
+    }
+}
+.black-btn {
+    color: $white;
+    background: $black;
+    border: 2px solid $black;
+    font-size: 17px;
+    border-radius: 50px;
+    padding: 10px 50px;
+    min-width: 200px;
+    text-align: center;
+    @include transition;
+    &:hover {
+        background: $white;
+        border: 2px solid $red;
+        color: $red;
+    }
+    &:active {
+        background: $black;
+        color: $red;
+    }
+}
+
+.black-outline-btn {
+    color: $black;
+    border: 2px solid $black;
+    font-size: 17px;
+    border-radius: 50px;
+    padding: 10px 50px;
+    min-width: 200px;
+    text-align: center;
+    @include transition;
+    &:hover {
+        border: 2px solid $red;
+        color: $red;
+    }
+    &:focus {
+        border: 3px solid $red;
+    }
+    &:active {
+        background: $gray-medium;
+        border: 2px solid $gray-medium;
+        color: $gray-light;
+    }
+}

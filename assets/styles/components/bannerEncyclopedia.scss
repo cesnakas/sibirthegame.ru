@@ -1,0 +1,22 @@
+.bannerEncyclopedia {
+    background: url('../images/bg_red_banner.png') no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bannerEncyclopedia-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bannerEncyclopedia-content__img {
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+.bannerEncyclopedia-content__descr {
+    text-align: center;
+    color: $white;
+}

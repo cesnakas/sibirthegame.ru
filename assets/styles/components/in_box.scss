@@ -1,0 +1,97 @@
+.inBox {
+    padding: 50px 0;
+    border-bottom: 1px solid $red;
+    position: relative;
+    @include adaptive {
+        padding: 15px 0 50px 0;
+    }
+}
+.inBox__h2 {
+    margin: 0 0 60px 0;
+}
+.inBox-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    @include adaptive {
+        display: none;
+    }
+}
+.inBox-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $col-4;
+    text-align: center;
+    margin-bottom: 30px;
+
+    &--big {
+        width: $col-5;
+    }
+
+    @include adaptive {
+        width: $col-9;
+        margin-bottom: 0;
+    }
+}
+.inBox-item__img {
+    margin-bottom: 30px;
+    max-width: 100%;
+    @include adaptive {
+        max-height: 210px;
+    }
+}
+.inBox-item__title {
+    color: $black;
+    margin: 0 0 15px 0;
+    font-weight: 500;
+}
+.inBox-item__descr {
+    color: $gray-medium;
+    line-height: 20px;
+    margin: 0;
+}
+.inBox-btn {
+    position: absolute;
+    right: 10%;
+    bottom: -18px;
+    white-space: nowrap;
+    font-weight: 500;
+    @include mobile {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+// Slider
+.inBox-slider {
+    display: none;
+    @include adaptive {
+        display: block;
+    }
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.swiper-button-next ,
+.swiper-button-prev {
+    color: $red !important;
+}

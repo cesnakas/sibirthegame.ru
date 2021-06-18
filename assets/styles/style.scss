@@ -1,0 +1,27 @@
+/*-------------------------- plugins --*/
+@import 'plugins/normalize';
+
+/* --------------- base */
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/common';
+
+/* --------------- components */
+@import 'components/header';
+@import 'components/banner';
+@import 'components/limitations';
+@import 'components/mechanics';
+@import 'components/in_box';
+@import 'components/vocabulary';
+@import 'components/preOrder';
+@import 'components/contacts';
+@import 'components/bannerEncyclopedia';
+@import 'components/slovnik';
+@import 'components/footer';
+@import 'components/publisher';
+@import 'components/vue-phone-number';
+
+/* --------------- dialog */
+@import 'components/ordering_dialog';
+@import 'components/help_dialog';
