@@ -1,5 +1,6 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
+$APPLICATION->SetTitle('basket');
 ?>
 
     <section class="basket__section">

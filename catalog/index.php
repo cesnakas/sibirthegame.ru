@@ -164,7 +164,7 @@ $APPLICATION->SetTitle('catalog');
                     "CACHE_TYPE" => "A",
                     "CONVERT_CURRENCY" => "Y",
                     "CURRENCY_ID" => "RUB",
-                    "ELEMENT_ID" => "22",
+                    "ELEMENT_ID" => "1",
                     "IBLOCK_ID" => "1",
                     "IBLOCK_TYPE_ID" => "catalog",
                     "OFFERS_CART_PROPERTIES" => [], // array("COLOR_REF","SIZES_SHOES","SIZES_CLOTHES"),
