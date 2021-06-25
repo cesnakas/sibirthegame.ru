@@ -1,0 +1,25 @@
+.basket {
+
+    &__section {
+        padding-top: 1.5rem;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 784px;
+        margin: 0 auto;
+        padding: 1.5rem;
+        background-color: #fff;
+    }
+
+    &__empty {
+
+        &-img {
+            width: 240px;
+            height: 240px;
+        }
+    }
+}

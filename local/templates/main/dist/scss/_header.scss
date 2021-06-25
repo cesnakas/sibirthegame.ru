@@ -1,0 +1,24 @@
+.header {
+    padding: .75rem 0;
+
+    .container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &-logo__text {
+        font-family: 'Noto Serif', serif;
+    }
+
+    &__basket {
+
+        &-btn {
+            color: #020A23;
+            font-size: 1rem;
+
+            &:hover {
+                color: #B54C3E;
+            }
+        }
+    }
+}
