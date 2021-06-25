@@ -1,13 +1,5 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-
-$arProduct = CIBlockElement::getList([
-    'FILTER' => [
-        'IBLOCK_ID' => $arParams['IBLOCK_ID'],
-        'ACTIVE' => 'Y',
-        'ACTIVE_DATE'=> 'Y',
-    ],
-]);
 ?>
 
     <section class="banner" itemscope itemtype="http://schema.org/Product">

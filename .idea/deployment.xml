@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="siberthegame.cesnakas.com" createEmptyFolders="true" autoUploadExternalChanges="true" notifyRemoteChanges="true">
+  <component name="PublishConfigData" autoUpload="Always" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="sibirthegame.1bx.su" createEmptyFolders="true" traceLevel="ERRORS" autoUploadExternalChanges="true" notifyRemoteChanges="true">
     <serverData>
       <paths name="siberthegame.cesnakas.com">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sibirthegame.1bx.su">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />

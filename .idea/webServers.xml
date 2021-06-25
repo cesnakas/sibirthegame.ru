@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="7221ad68-0d8d-4fb3-922f-ae66548c9aac" name="sibirthegame.1bx.su" url="http://sibirthegame.1bx.su">
+        <fileTransfer rootFolder="/www/sibirthegame.1bx.su/" host="31.31.196.172" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
