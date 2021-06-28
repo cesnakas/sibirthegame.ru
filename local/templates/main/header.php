@@ -78,7 +78,7 @@ $bMainPage = $APPLICATION->GetCurPage(false) === '/';
                     <div class="container wrap header-wrap">
 
                         <a class="header-logo" href="<?=SITE_DIR?>">
-                            <img src="<?= SITE_TEMPLATE_PATH; ?>/assets/img/logo.png" alt class="header-logo__img">
+                            <img src="<?= SITE_TEMPLATE_PATH; ?>/assets/img/logo.png" alt="logo" class="header-logo__img">
                             <span class="header-logo__text"><?=GetMessage('MAIN_LOGO_TEXT');?></span>
                         </a>
 
