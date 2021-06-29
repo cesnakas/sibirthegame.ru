@@ -216,7 +216,7 @@ if (empty($arResult['ERROR_MESSAGE']))
 		</div>
 
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-lg-6">
 				<div class="basket-items-list-wrapper basket-items-list-wrapper-height-fixed basket-items-list-wrapper-light<?=$displayModeClass?>"
 					id="basket-items-list-wrapper">
 					<div class="basket-items-list-header" data-entity="basket-items-list-header">
@@ -264,7 +264,7 @@ if (empty($arResult['ERROR_MESSAGE']))
 		{
 			?>
 			<div class="row">
-				<div class="col-xs-12" data-entity="basket-total-block"></div>
+				<div class="col-lg-6" data-entity="basket-total-block"></div>
 			</div>
 			<?
 		}

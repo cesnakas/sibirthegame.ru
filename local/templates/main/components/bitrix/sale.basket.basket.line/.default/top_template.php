@@ -11,11 +11,20 @@ $compositeStub = (isset($arResult['COMPOSITE_STUB']) && $arResult['COMPOSITE_STU
 <? if(!$arResult['DISABLE_USE_BASKET']): ?>
     <a class="header__basket-btn" href="<?=$arParams['PATH_TO_BASKET']?>">
 
-        <? if($arParams['NUM_PRODUCTS'] > 0): ?>
+        <? if($arResult['NUM_PRODUCTS'] > 0): ?>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
             <use href="<?=SITE_TEMPLATE_PATH?>/dist/img/icons.svg#bag-order" xlink:href="<?=SITE_TEMPLATE_PATH?>/dist/img/icons.svg#bag-order"></use>
         </svg>
-        <span><?=($arParams['NUM_PRODUCTS'] > 0) ? $arResult['NUM_PRODUCTS'] : ''?></span>
+        <span>
+            <?=($arResult['NUM_PRODUCTS'] > 0) ? $arResult['NUM_PRODUCTS'] : ''?>
+            <?/*
+            if ($arResult['NUM_PRODUCTS'] > 0) {
+                echo $arResult['BASKET_COUNT_DESCRIPTION'];
+            } else {
+                echo '';
+            }
+            */?>
+        </span>
         <? else: ?>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
             <use href="<?=SITE_TEMPLATE_PATH?>/dist/img/icons.svg#bag" xlink:href="<?=SITE_TEMPLATE_PATH?>/dist/img/icons.svg#bag"></use>
@@ -26,8 +35,8 @@ $compositeStub = (isset($arResult['COMPOSITE_STUB']) && $arResult['COMPOSITE_STU
     </a>
 <? endif; ?>
 
-<?php
-/*
+
+<?/*
 <div class="bx-hdr-profile">
 <?if (!$compositeStub && $arParams['SHOW_AUTHOR'] == 'Y'):?>
 	<div class="bx-basket-block">

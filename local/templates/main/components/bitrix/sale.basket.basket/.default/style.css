@@ -493,6 +493,7 @@
 	position: relative;
 	overflow: hidden;
 	width: 100%;
+	background-color: #fff;
 }
 
 .basket-items-list-overlay {

@@ -1,12 +1,10 @@
-<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
-    die();
-}
+<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\Page\Asset;
 
 Loc::loadMessages(__FILE__);
 
-$bMainPage = $APPLICATION->GetCurPage(false) === '/';
+// $bMainPage = $APPLICATION->GetCurPage(false) === '/';
 
 // $sSpritePath = SITE_TEMPLATE_PATH.'/dist/icons/sprite.svg';
 ?>
@@ -78,7 +76,7 @@ $bMainPage = $APPLICATION->GetCurPage(false) === '/';
                     <div class="container wrap header-wrap">
 
                         <a class="header-logo" href="<?=SITE_DIR?>">
-                            <img src="<?= SITE_TEMPLATE_PATH; ?>/assets/img/logo.png" alt="logo" class="header-logo__img">
+                            <img src="<?= SITE_TEMPLATE_PATH; ?>/assets/img/logo.png" alt class="header-logo__img">
                             <span class="header-logo__text"><?=GetMessage('MAIN_LOGO_TEXT');?></span>
                         </a>
 
@@ -118,30 +116,32 @@ $bMainPage = $APPLICATION->GetCurPage(false) === '/';
                         */?>
 
                         <?$APPLICATION->IncludeComponent(
-                            'bitrix:sale.basket.basket.line',
-                            '',
+                            "bitrix:sale.basket.basket.line",
+                            ".default",
                             [
-                                "HIDE_ON_BASKET_PAGES" => 'N',
-                                "PATH_TO_BASKET" => SITE_DIR.'basket/',
-                                "PATH_TO_ORDER" => SITE_DIR.'personal/order/make/',
-                                "PATH_TO_PERSONAL" => SITE_DIR.'personal/',
-                                "PATH_TO_PROFILE" => SITE_DIR.'personal/',
-                                "PATH_TO_REGISTER" => SITE_DIR.'login/',
-                                "POSITION_FIXED" => 'N',
-                                "POSITION_HORIZONTAL" => 'right',
-                                "POSITION_VERTICAL" => 'top',
-                                "SHOW_AUTHOR" => 'N',
-                                "SHOW_DELAY" => 'N',
-                                "SHOW_EMPTY_VALUES" => 'Y',
-                                "SHOW_IMAGE" => 'N',
-                                "SHOW_NOTAVAIL" => 'N',
-                                "SHOW_NUM_PRODUCTS" => 'Y',
-                                "SHOW_PERSONAL_LINK" => 'N',
-                                "SHOW_PRICE" => 'Y',
-                                "SHOW_PRODUCTS" => 'Y',
-                                "SHOW_SUMMARY" => 'Y',
-                                "SHOW_TOTAL_PRICE" => 'Y'
-                            ]
+                                "HIDE_ON_BASKET_PAGES" => "N",
+                                "PATH_TO_BASKET" => SITE_DIR."basket/",
+                                "PATH_TO_ORDER" => SITE_DIR."personal/order/make/",
+                                "PATH_TO_PERSONAL" => SITE_DIR."personal/",
+                                "PATH_TO_PROFILE" => SITE_DIR."personal/",
+                                "PATH_TO_REGISTER" => SITE_DIR."login/",
+                                "POSITION_FIXED" => "N",
+                                "SHOW_AUTHOR" => "N",
+                                "SHOW_DELAY" => "N",
+                                "SHOW_EMPTY_VALUES" => "N",
+                                "SHOW_IMAGE" => "N",
+                                "SHOW_NOTAVAIL" => "N",
+                                "SHOW_NUM_PRODUCTS" => "Y",
+                                "SHOW_PERSONAL_LINK" => "N",
+                                "SHOW_PRICE" => "N",
+                                "SHOW_PRODUCTS" => "N",
+                                "SHOW_SUMMARY" => "N",
+                                "SHOW_TOTAL_PRICE" => "Y",
+                                "COMPONENT_TEMPLATE" => ".default",
+                                "PATH_TO_AUTHORIZE" => "",
+                                "SHOW_REGISTRATION" => "N"
+                            ],
+                            false
                         );?>
 
                         <img src="<?= SITE_TEMPLATE_PATH; ?>/assets/img/burger.svg" alt="Меню" class="header-burger js-header-btn">
